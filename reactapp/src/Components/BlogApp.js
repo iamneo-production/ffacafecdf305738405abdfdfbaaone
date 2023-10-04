@@ -16,7 +16,7 @@ const BlogApp = () => {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/home" exact element={<Home />} />
           <Route path="/post/:id" element={<BlogPost />} />
           <Route path="/blogs" element={<BlogList />} />
         </Routes>
